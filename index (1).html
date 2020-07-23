@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        #modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        #modal_img {
+            margin: auto;
+            display: block;
+            width: 500px;
+            height: 500px;
+        }
+
+        #close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="alrt()">Click me</button>
+    <h1>Mobile Phone Shop</h1>
+    <img src="img1.jpg" alt="img1" width="200px" height="300px" onclick="thank()">
+    <img src="img2.jpg" alt="img2" width="200px" height="300px" onclick="thank()">
+    <img src="img3.jpg" alt="img3" width="200px" height="300px" onclick="thank()">
+
+    <h1>Student's Record</h1>
+    <table id="tble">
+    </table>
+
+    <h1>Mouse Over Event</h1>
+    <span id='abc' onmouseover="change()" onmouseout="change1()"><img src="img1.jpg" width="200px" height="300px"
+            alt=""></span>
+
+    <h1>Counter</h1>
+    <button onclick="inc()">Increase</button>
+    <button onclick="dec()">Decrease</button>
+    <h1 id="inc"></h1>
+
+    <form action="">
+        <p>Name</p><input id="name" type="text">
+        <p>Email</p><input id="email" type="text">
+        <p>Address</p><input id="address" type="text">
+        <button onclick="showDet()">Submit</button>
+    </form>
+
+
+    <h1>Item Details</h1>
+    <p id="django">Django is a high-level Python Web framework.<a onclick="more()" style="color: red;">read more</a></p>
+
+
+    <!-- Chapter 53-58 -->
+    <div id="img_div">
+    </div>
+    <div id="modal">
+        <img id="modal_img" src="" alt="">
+        <button id="close" class="btn btn-primary" onclick="onClosedImagModal()">X</button>
+    </div>
+
+
+
+
+
+
+    <!-- Chapter 58-67 -->
+    <div>
+        <h1> DOM </h1>
+        <div id='form-content' class='content'>
+            <label for='first-name'>First Name</label>
+            <input type='text' id='first-name' />
+            <label for='last-name'>Last Name</label>
+            <input type='text' id='last-name' />
+            <label for='email'>Email</label>
+            <input type='text' id='email1' />
+        </div>
+        <div id='main-content' class='content'>
+            <p class='render'> First Name : Alex</p>
+            <p class='render' id='lastName'>Last Name: Bank</p>
+            <p class='render'> Email : alexbank@example.com</p>
+            <p class='render'> Country : Pakistan </p>
+            <p class='render'> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
